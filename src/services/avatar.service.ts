@@ -3,7 +3,7 @@ import multiavatar from '@multiavatar/multiavatar';
 
 @Injectable()
 export class AvatarService {
-  get(): string {
-    return multiavatar('1');
+  get(str: string): string {
+    return multiavatar(str);
   }
 }
